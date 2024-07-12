@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripcion" content="pagina de libro de rectas virtual">
+    <meta name="palabras claves" content="HTML, CSS, javascript, Recetas, italian, dominican, arabian ">
+    <meta name="autor" content="Felix Ramon Suriel Lugo">
+    <title>virtual recipes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="img/Logo.png" type="image/x-icon">
+</head>
+
+<body dat-bs-theme="light">
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light>
+        <div" style="background-color:  rgb(239, 214, 176);">
+
+            <!--tema oscuro-->
+            <button onclick="cambiarTema()" class="btn rounded-fill"><i id="dl-icon" class="bi bi-moon-fill"></i></button>
+
+
+            <a class="navbar-brand" href="index.html">
+                <img src="img/Dominican.jpeg" alt="dominicana" width="30" height="30" class="d-inline-block align-top">
+                Recetas Dominicanas
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="arabian.html">Arabian</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">dominican</a></li>
+                    <li class="nav-item"><a class="nav-link" href="italian.html">italian</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header id="inicio" class="py-5 text-center">
+        <h1>La cocina caribeña</h1>
+        <p>"te invitamos a descubrir la rica y vibrante gastronomía dominicana, una cocina que celebra la diversidad de culturas y tradiciones que han dado forma a la República Dominicana. "</p>
+    </header>
+   
+
+
+    <main class="container">
+
+
+        <hr>
+
+        <!--Primera linea-->
+        <div class="txt">
+            <div class="info">
+                <h3>La bandera dominicana</h3>
+                <p>Este plato es considerado el almuerzo tradicional por excelencia en la República Dominicana. <br>
+                   Su nombre simboliza la bandera nacional debido a los colores del arroz, <br>
+                   habichuelas y carne.</p>
+            </div>
+            <div class="info">
+                <h3>sancocho</h3>
+                <p>Este guiso tiene raíces africanas y españolas, y se ha convertido en un símbolo de la cocina <br>
+                   dominicana. Es especialmente popular en celebraciones y <br>
+                   días festivos.</p>
+            </div>
+        </div>
+
+
+        <div class="b-container">
+            <div class="card">
+                <img class="img-container" src="img/bandera.jpeg" alt="la bandera"  onmouseover="showInfo(event)" onmouseout="hideInfo(event)">
+                    <div class="info-img-d">
+                        <p> Preparación: 
+                            <br><br>
+                            Ingredientes: Arroz blanco, habichuelas guisadas, carne guisada,
+                            acompañamiento .
+                            <br><br>
+                            Proceso: se cocina arroz con agua, sal y un poco de aceite, luego las habichuelas, cocidas con un sofrito de ajo, cebolla, ajies, tomate, cilantro y otras especias.
+                            </p>
+                    </div>
+            </div>
+            <div class="card">
+                <img class="img-container" src="img/sancocho.jpeg" alt="sancocho" onmouseover="showInfo(event)" onmouseout="hideInfo(event)">
+                    <div class="info-img-d">
+                        <p>Preparación: 
+                            <br><br>
+                            Ingredientes: Varias carnes (res, cerdo, pollo), tubérculos como yuca, plátano, yautía, auyama (calabaza), y vegetales como maíz y cilantro.
+                            de sodio. 
+                            <br><br>
+                            Proceso:  Las carnes se doran y luego se cocinan a fuego lento con los tubérculos y vegetales, agregando agua y caldo hasta que todo esté tierno y bien integrado.
+                        </p>
+                    </div>
+            </div>
+        </div>
+
+
+        <br>
+        <hr>
+
+
+        <!--Segunda linea-->
+        <div class="txt">
+            <div class="info">
+                <h3>Mangu</h3>
+                <p>Este plato tiene raíces africanas y es una de las comidas más populares para <br> el 
+                   desayuno en la República Dominicana.</p>
+            </div>
+            <div class="info">
+                <h3>Mofongo</h3>
+                <p>Aunque es originario de Puerto Rico, el mofongo ha sido adoptado y adaptado
+                   en la <br> República Dominicana.</p>
+            </div>
+        </div>
+
+
+        <div class="b-container">
+            <div class="card">
+                <img class="img-container" src="img/mangu-dominican-mashed-plantains.jpg" alt="mangu" onmouseover="showInfo(event)" onmouseout="hideInfo(event)" >
+                <div class="info-img-d">
+                    <p>Preparación:
+                        <br><br>
+                        Ingredientes:Plátanos verdes, mantequilla, cebolla roja, vinagre.
+                        <br><br>
+                        Proceso: Los plátanos se hierven y se machacan con un poco de agua de cocción y mantequilla hasta obtener una consistencia suave. Se sirve con cebolla roja salteada en vinagre, queso frito, salami y huevos.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="img-container" src="img/mofongo.jpeg" alt="mofongo" onmouseover="showInfo(event)" onmouseout="hideInfo(event)">
+                <div class="info-img-d">
+                    <p>Preparación:
+                        <br><br>
+                        Ingredientes:Plátanos verdes, ajo, chicharrón (piel de cerdo frita), aceite. 
+                        <br><br>
+                        Proceso: Los plátanos se fríen y luego se machacan con ajo y chicharrón. Se puede servir con un caldo de carne o acompañado de carnes o mariscos.
+                        </p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <br>
+        <hr>
+
+
+    <!--Tercera linea-->
+        <div class="txt">
+            <div class="info">
+                <h3>Moro de guandules</h3>
+                <p>Este plato de arroz y guandules (gandules) es muy tradicional, especialmente <br>
+                   en las festividades navideñas.</p>
+            </div>
+            <div class="info">
+                <h3>Habichuelas con dulce</h3>
+                <p>Este postre único tiene raíces africanas y españolas y es tradicionalmente preparado <br>
+                   durante la Semana Santa.</p>
+            </div>
+        </div>
+
+    
+        <div class="b-container">
+            <div class="card">
+                <img class="img-container" src="img/moro de guandules.jpeg" alt="moro de guandule" onmouseover="showInfo(event)" onmouseout="hideInfo(event)" >
+                <div class="info-img-d">
+                    <p>Preparación: 
+                        <br><br>
+                        Ingredientes: Arroz, guandules, leche de coco, ajo, cebolla, ajíes, cilantro.
+                        <br><br>
+                        Proceso:Se prepara un sofrito con ajo, cebolla y ajíes. Se añaden los guandules y la leche de coco, y luego el arroz, cocinando todo junto hasta que el arroz esté tierno.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="img-container" src="img/habichuel con dulce.jpeg" alt="habichuela con dulce" onmouseover="showInfo(event)" onmouseout="hideInfo(event)">
+                <div class="info-img-d">
+                    <p>Preparación: 
+                        <br><br>
+                        Ingredientes:Habichuelas rojas, leche, leche de coco, batata (camote), azúcar, especias (canela, clavo), galletas.
+                        <br><br>
+                        Proceso: Cocinar las habichuelas hasta que estén tiernas y hacerlas puré, mezclar con leche, leche de coco, azúcar, canela y clavo, agregar batata en cubos y cocinar a fuego lento hasta que espese.
+                        añadir pasas y servir con galletas de leche.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+    <br>
+    <br>
+
+
+     <!--pie de pagina-->
+     <footer  style="background-color: rgb(239, 214, 176)">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Enlaces de interés</h5>
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/8AtD81E56yg?si=0TFa0O1y5O7BbN-H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-4">
+                    <h5>Síguenos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://web.facebook.com/felix.ramon.2512" class="text-dark"><i class="bi bi-facebook"></i> Facebook</a></li>
+                        <li><a href="https://github.com/Felixs04" class="text-dark"><i class="bi bi-github"></i>Github</a></li>
+                        <li><a href="https://www.instagram.com/f.suriellugo/" class="text-dark"><i class="bi bi-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Ubicación</h5>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60528.01477707157!2d-70.03790798175446!3d18.528860404499856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf8b6e52477751%3A0xbd0377bdf3fa6fcc!2sEscuela%20de%20Gastronomia%20Culinary%20Arts!5e0!3m2!1ses-419!2sdo!4v1720569084179!5m2!1ses-419!2sdo" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">&copy; 2024 virtual recipes. Todos los derechos reservados.</p>
+            <p class="text-center"><a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#privacyModal">Política de Privacidad</a></p>
+        </div>
+    </footer>
+
+
+    <!--politicas de privacidad-->
+    <div class="modal fade" id="privacyModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Política de Privacidad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, accusantium! Corrupti, omnis. Omnis, magni eius. Nemo at quia, impedit cupiditate tempora quam dolorem commodi nulla, similique nobis, magni necessitatibus debitis!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--insertacion del javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

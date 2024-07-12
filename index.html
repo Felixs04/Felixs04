@@ -1,0 +1,203 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripcion" content="pagina de libro de rectas virtual">
+    <meta name="palabras claves" content="HTML, CSS, javascript, Recetas, italian, dominican, arabian ">
+    <meta name="autor" content="Felix Ramon Suriel Lugo">
+    <title>virtual recipes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="img/Logo.png" type="image/x-icon">
+</head>
+
+<body dat-bs-theme="light">
+
+
+<!--barra de navegacion-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light>
+        <div" style="background-color:  rgb(239, 214, 176);">
+
+            <!--tema oscuro-->
+            <button onclick="cambiarTema()" class="btn rounded-fill"><i id="dl-icon" class="bi bi-moon-fill"></i></button>
+
+
+            <a class="navbar-brand" href="index.html">
+                <img src="img/Logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-top">
+                Inicio
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="arabian.html">Arabian</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dominican.html">dominican</a></li>
+                    <li class="nav-item"><a class="nav-link" href="italian.html">italian</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Encabezado-->
+    <header id="inicio" class="py-5 text-center">
+        <h1>Bienvenido al libro de recetas virtual</h1>
+        <p class="lead">"El mundo culinario a traves de un click"</p>
+    </header>
+
+
+    <!--Contenido principal-->
+    <main class="container">
+
+
+        <h2>Catalogo</h2>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/carousel 2.png" class="d-block w-100" height="250">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel 3.png" class="d-block w-100" height="250">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel 1.png" class="d-block w-100" height="250">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+
+        <br>
+        <br>
+
+
+        <!--informacion de la pagina-->
+         <h2>Sobre nosotros</h2>
+         <div class="sob-nosotros">
+             <div class="container">
+                 <p>Bienvenidos a nuestra página de recetas, donde celebramos la diversidad culinaria a través de la cocina dominicana, árabe e italiana. Nuestra misión es compartir recetas auténticas que reflejan la riqueza cultural y las tradiciones de cada una de estas gastronomías. Disfruta de platos dominicanos como mangú, mofongo y sancocho, explora sabores árabes exóticos con recetas de hummus, tabbouleh, cordero asado y baklava, y descubre la pasión de la cocina italiana con pasta casera, pizzas, risottos y tiramisú, celebrando la simplicidad y el amor por los ingredientes frescos. Proporcionamos recetas claras y fáciles de seguir, utilizando ingredientes accesibles y técnicas que puedes dominar en tu propia cocina. Queremos inspirarte a explorar nuevas culturas y sabores. Nos encantaría saber de ti; si tienes preguntas, sugerencias o quieres compartir tus experiencias culinarias, no dudes en contactarnos. ¡Buen provecho!</p>
+             </div>
+         </div>  
+
+             
+        <br>
+        <br>
+
+
+        <!--informaciones de las gastronomias-->
+            <h2>Cultura gastronomica</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/Dominican.jpeg" class="card-img-top" alt="Noticia 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Sabores de la República Dominicana: Un Viaje Culinario a Través de su Gastronomía</h5>
+                            <p class="card-text">La gastronomía dominicana es una rica y variada mezcla de influencias indígenas taínas, africanas, españolas y de otros países europeos. Esta combinación de culturas ha dado lugar a una cocina vibrante y llena de sabor. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/Italian.jpeg" class="card-img-top" alt="Noticia 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Delicias de Italia: Un Recorrido por la Tradición Culinaria Italiana</h5>
+                            <p class="card-text">La gastronomía italiana es mundialmente reconocida por su diversidad y riqueza, caracterizada por una fuerte tradición culinaria que varía de una región a otra.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="img/Arabian.jpeg" class="card-img-top" alt="Noticia 3" >
+                        <div class="card-body">
+                            <h5 class="card-title">Esencias de Oriente: Un Viaje por la Gastronomía Árabe</h5>
+                            <p class="card-text">La gastronomía árabe es una de las más ricas y variadas del mundo, influenciada por una extensa historia y una vasta región geográfica que abarca desde el norte de África hasta el Medio Oriente. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        <br>
+        <br>
+      
+            
+            <!--enviar correo-->
+            <h2>Contáctanos</h2>
+            <p>¿Tienes alguna pregunta? No dudes en contactarnos.</p>
+            <a href="mailto:fs23-0217@unphu.edu.do" class="btn btn-primary">Enviar correo</a>
+        
+
+    </main>
+
+
+        <br>
+        <br>
+
+
+    <!--pie de pagina-->
+    <footer  style="background-color: rgb(239, 214, 176)">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Enlaces de interés</h5>
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/vRu7yWotnws?si=pvzuuAcQsz2sulAZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-4">
+                    <h5>Síguenos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://web.facebook.com/felix.ramon.2512" class="text-dark"><i class="bi bi-facebook"></i> Facebook</a></li>
+                        <li><a href="https://github.com/Felixs04" class="text-dark"><i class="bi bi-github"></i>Github</a></li>
+                        <li><a href="https://www.instagram.com/f.suriellugo/" class="text-dark"><i class="bi bi-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Ubicación</h5>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60528.01477707157!2d-70.03790798175446!3d18.528860404499856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf8b6e52477751%3A0xbd0377bdf3fa6fcc!2sEscuela%20de%20Gastronomia%20Culinary%20Arts!5e0!3m2!1ses-419!2sdo!4v1720569084179!5m2!1ses-419!2sdo" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">&copy; 2024 virtual recipes. Todos los derechos reservados.</p>
+            <p class="text-center"><a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#privacyModal">Política de Privacidad</a></p>
+        </div>
+    </footer>
+
+
+    <!--politicas de privacidad-->
+    <div class="modal fade" id="privacyModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Política de Privacidad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, accusantium! Corrupti, omnis. Omnis, magni eius. Nemo at quia, impedit cupiditate tempora quam dolorem commodi nulla, similique nobis, magni necessitatibus debitis!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--insertacion del javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+</html>
+

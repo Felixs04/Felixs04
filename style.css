@@ -1,0 +1,117 @@
+body {
+    font-family: Copperplate, Papyrus, fantasy;
+    transition: background-color 0.3s, color 0.3s;
+    text-align: center;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.dark-mode .navbar {
+    background-color: #ffffff !important;
+}
+
+.light-mode .navbar {
+    background-color: #000000 !important;
+}
+
+.dark-mode .card {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.card {
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.03);
+    background-color: rgb(200, 180, 150);
+}
+
+#darkModeToggle {
+    z-index: 1000;
+}
+
+.nav-link:hover {
+    color: #007bff !important;
+}
+
+.sob-nosotros :hover{
+    transform: scale(1.03);
+}
+
+.arab-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.b-container{
+    display: flex;
+    justify-content: space-between;  
+}
+
+.txt{
+    display: flex;
+}
+
+.info{
+    margin-left: 100;
+   margin-right: 100;
+    text-align: center;
+}
+
+.img-container{
+    width: 600px;
+    height: 400px;
+}
+
+.info-img-a {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    right: 25px;
+    background-color: rgb(18, 154, 0);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.info-img-i {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    right: 25px;
+    background-color: rgb(203, 0, 0);
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.info-img-d {
+    display: none;
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    right: 25px;
+    background-color: #0512c4;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1000;
+}
+
+.btn-primary {
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+

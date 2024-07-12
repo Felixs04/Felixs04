@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripcion" content="pagina de libro de rectas virtual">
+    <meta name="palabras claves" content="HTML, CSS, javascript, Recetas, italian, dominican, arabian ">
+    <meta name="autor" content="Felix Ramon Suriel Lugo">
+    <title>virtual recipes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="img/Logo.png" type="image/x-icon">
+       
+</head>
+
+
+<body dat-bs-theme="light">
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light>
+        <div" style="background-color:  rgb(239, 214, 176);">
+
+            <!--tema oscuro-->
+            <button onclick="cambiarTema()" class="btn rounded-fill"><i id="dl-icon" class="bi bi-moon-fill"></i></button>
+
+
+            <a class="navbar-brand" href="index.html">
+                <img src="img/Italian.jpeg" alt="italiana" width="30" height="30" class="d-inline-block align-top">
+                Recetas Italianas
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="arabian.html">Arabian</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dominican.html">dominican</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">italian</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <header id="inicio" class="py-5 text-center">
+        <h1>El sabor Mediterraneo</h1>
+        <p>"Sumérgete en un viaje culinario a través de la rica y diversa gastronomía italiana. Aquí, cada plato cuenta una historia de tradición y pasión, desde las pastas artesanales y las pizzas horneadas a la perfección, hasta los delicados postres"</p>
+    </header>
+   
+
+
+    <main class="container">
+
+
+        <hr>
+
+        <!--Primera linea-->
+        <div class="txt">
+            <div class="info">
+            <h3>Pasta a la carbonara</h3>
+                <p>Tiene sus origines en la region de lacio, especialmente en Roma. Se cree que  <br>
+                   fue creada durante la segunda guerra mundial con <br> 
+                   ingredientes faciles de conseguir. 
+                </p>
+            </div>
+            <div class="info">
+            <h3>Risotto a la Milanese</h3>
+                <p>Es tipico de milan y se caracteriza por su color dorado debido al azafran. se dice <br>
+                   que fue creado por un pintor de vidrieras que accidetalmente <br>
+                   derramo azafran en su arroz.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="b-container">
+            <div class="card">
+                <img class="img-container" src="img/carbonara.jpeg" alt="carbonara"  onmouseover="showInfo(event)" onmouseout="hideInfo(event)">
+                <div class="info-img-i">
+                    <p> Preparación: 
+                        <br><br>
+                        Ingredientes: Spaghetti, huevos, queso pecorino romano, panceta o guanciale, pimienta negra.
+                        <br><br>
+                        Proceso: Cocina la pasta. Mientras tanto, fríe la panceta o guanciale hasta que esté crujiente. En un bol, bate los huevos con el queso y la pimienta. Una vez cocida la pasta, mezcla rápidamente con la panceta caliente y luego añade la mezcla de huevo y queso, removiendo rápidamente para que el huevo no se cuaje completamente sino que forme una salsa cremosa.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="img-container" src="img/risotto.webp" alt="falafel" onmouseover="showInfo(event)" onmouseout="hideInfo(event)">
+                <div class="info-img-i">
+                    <p> Preparación: 
+                        <br><br>
+                        Ingredientes: Arroz arborio, caldo de pollo, cebolla, mantequilla, queso parmesano, vino blanco, azafrán.
+                        <br><br>
+                        Proceso: Sofríe la cebolla en mantequilla. Añade el arroz y remueve hasta que esté ligeramente tostado. Añade el vino blanco y cocina hasta que se evapore. Añade el caldo caliente poco a poco mientras remueves constantemente. Disuelve el azafrán en un poco de caldo y añádelo al risotto. Una vez el arroz esté cocido y cremoso, añade más mantequilla y queso parmesano.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <br>
+        <hr>
+
+
+        <!--Segunda linea-->
+        <div class="txt">
+            <div class="info">
+            <h3>Pizza Margherita</h3>
+                <p>Es originaria de Napoles. Fue crada en honor a la Reina Margherita de saboya, usando <br>
+                   los colores de la bandera italiana: rojo(tomate), <br>
+                   blanco(mozarella) y verde(albahaca). 
+                </p>
+            </div>
+            <div class="info">
+            <h3>Lasagna</h3>
+                <p>Tiene sus raices en la religion de Emilia-Romagna. Este plato de capas de pasta <br>
+                   capas de pasta, carne, salsa bechamel y queso ha sido un <br>
+                   favorito durante siglos.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="b-container">
+            <div class="card">
+                <img class="img-container" src="img/pizza.jpeg" alt="pizza" onmouseover="showInfo(event)" onmouseout="hideInfo(event)" >
+                <div class="info-img-i">
+                    <p>Preparación: 
+                        <br><br>
+                        Ingredientes:Masa de pizza, tomates, mozzarella fresca, albahaca fresca, aceite de oliva, sal.
+                        <br><br>
+                        Proceso: Extiende la masa de pizza. Coloca los tomates triturados sobre la masa, añade rodajas de mozzarella, hojas de albahaca y un chorrito de aceite de oliva. Hornea en un horno muy caliente hasta que la masa esté crujiente y la mozzarella derretida.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="img-container" src="img/lasagna.jpeg" alt="lasagna" onmouseover="showInfo(event)" onmouseout="hideInfo(event)">
+                <div class="info-img-i">
+                    <p>Preparación: 
+                        <br><br>
+                        Ingredientes:  Placas de lasaña, ragú (salsa de carne), salsa bechamel, queso parmesano.
+                        <br><br>
+                        Proceso: Cocina las placas de lasaña si es necesario. En una fuente para horno, alterna capas de placas de lasaña, ragú, bechamel y queso parmesano. Termina con una capa de bechamel y queso. Hornea hasta que esté dorado y burbujeante.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <br>
+        <hr>
+
+
+    <!--Tercera linea-->
+        <div class="txt">
+            <div class="info">
+            <h3>Minestrone</h3>
+                <p>Es una sopa de verduras gruesa y abundante que varia segun la temporada y la religion.<br>
+                   Es un plato que refleja la esencia de la <br>
+                   de la cocina campesina italiana.
+                </p>
+            </div>
+            <div class="info">
+            <h3>Tiramisu</h3>
+                <p>Es un postre relativamente moderno, originario del veneto en los años 1960.<br>
+                   Su nombre significa "levantame o animame" debido <br>
+                   a sus ingredientes energeticos.
+                </p>
+            </div>
+        </div>
+
+    
+        <div class="b-container">
+            <div class="card">
+                <img class="img-container" src="img/Minestrone.jpeg" alt="minestrone" onmouseover="showInfo(event)" onmouseout="hideInfo(event)" >
+                <div class="info-img-i">
+                    <p>Preparación:
+                        <br><br>
+                        Ingredientes:  Cebolla, zanahoria, apio, tomate, judías verdes, patatas, calabacín, col rizada, pasta corta o arroz, caldo de verduras.
+                        <br><br>
+                        Proceso: Sofríe las verduras picadas en aceite de oliva hasta que estén tiernas. Añade el tomate y el caldo, y cocina a fuego lento hasta que las verduras estén cocidas. Añade la pasta o el arroz y cocina hasta que estén al dente. Sazona al gusto y sirve caliente.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="img-container" src="img/tiramisu.jpeg" alt="tiramisu" onmouseover="showInfo(event)" onmouseout="hideInfo(event)">
+                <div class="info-img-i">
+                    <p>Preparación: 
+                        <br><br>
+                        Ingredientes: Queso mascarpone, huevos, azúcar, bizcochos (savoiardi), café espresso, cacao en polvo, licor (opcional).
+                        <br><br>
+                        Proceso:  Bate las yemas de huevo con el azúcar hasta obtener una mezcla cremosa, luego añade el mascarpone. Monta las claras a punto de nieve y mezcla suavemente con la crema de mascarpone. Remoja los bizcochos en café y colócalos en una fuente. Cubre con la mezcla de mascarpone y repite las capas. Refrigera varias horas y espolvorea con cacao en polvo antes de servir.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+    <br>
+    <br>
+
+
+     <!--pie de pagina-->
+     <footer  style="background-color: rgb(239, 214, 176)">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                <h5>Enlaces de interés</h5>
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/hL41ab0rIds?si=UxIKQ6xUbncD3XL0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="col-md-4">
+                    <h5>Síguenos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://web.facebook.com/felix.ramon.2512" class="text-dark"><i class="bi bi-facebook"></i> Facebook</a></li>
+                        <li><a href="https://github.com/Felixs04" class="text-dark"><i class="bi bi-github"></i>Github</a></li>
+                        <li><a href="https://www.instagram.com/f.suriellugo/" class="text-dark"><i class="bi bi-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                <h5>Ubicación</h5>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60528.01477707157!2d-70.03790798175446!3d18.528860404499856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf8b6e52477751%3A0xbd0377bdf3fa6fcc!2sEscuela%20de%20Gastronomia%20Culinary%20Arts!5e0!3m2!1ses-419!2sdo!4v1720569084179!5m2!1ses-419!2sdo" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">&copy; 2024 virtual recipes. Todos los derechos reservados.</p>
+            <p class="text-center"><a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#privacyModal">Política de Privacidad</a></p>
+        </div>
+    </footer>
+
+
+    <!--politicas de privacidad-->
+    <div class="modal fade" id="privacyModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Política de Privacidad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, accusantium! Corrupti, omnis. Omnis, magni eius. Nemo at quia, impedit cupiditate tempora quam dolorem commodi nulla, similique nobis, magni necessitatibus debitis!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--insertacion del javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>

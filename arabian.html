@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripcion" content="pagina de libro de rectas virtual">
+    <meta name="palabras claves" content="HTML, CSS, javascript, Recetas, italian, dominican, arabian ">
+    <meta name="autor" content="Felix Ramon Suriel Lugo">
+    <title>virtual recipes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" href="img/Logo.png" type="image/x-icon">
+</head>
+
+
+<body dat-bs-theme="light">
+
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-light>
+        <div" style="background-color:  rgb(239, 214, 176)">
+
+            <!--tema oscuro-->
+            <button onclick="cambiarTema()" class="btn rounded-fill"><i id="dl-icon" class="bi bi-moon-fill"></i></button>
+
+
+            <a class="navbar-brand" href="index.html">
+                <img src="img/Arabian.jpeg" alt="arabe" width="30" height="30" class="d-inline-block align-top">
+                Recetas Arabes
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">Arabian</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dominican.html">dominican</a></li>
+                    <li class="nav-item"><a class="nav-link" href="italian.html">italian</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+   
+    <header id="inicio" class="py-5 text-center">
+        <h1>Viaje al Oriente</h1>
+        <p>"En este apartado conoceremos algunas de las comidas mas clasicas de la    cultura arabe o tambien llamada la cultura oriental.
+        Empezando por una breve historia del origen de los platos para luego  ver cual seria la receta de este"</p>
+    </header>
+   
+
+
+    <main class="container">
+
+
+        <hr>
+
+        <!--Primera linea-->
+        <div class="txt">
+            <div class="info">
+                <h3>Hummus</h3>
+                <p>El hummus es una de las comidas más antiguas del Medio Oriente, con orígenes que se remontan<br>
+                a siglos atrás. Ha sido un alimento básico en la dieta árabe debido a su simplicidad y su<br>
+                alto valor nutritivo.
+                </p>
+            </div>
+            <div class="info">
+                <h3>Falafel</h3>
+                <p>Se cree que el falafel tiene sus raíces en Egipto, donde originalmente se hacía con habas.<br>
+                Con el tiempo, se extendió por todo el Medio Oriente y se empezó a hacer también<br>
+                con garbanzos
+                </p>
+            </div>
+        </div>
+
+
+        <div class="b-container">
+            <div class="card">
+                <img class="img-container" src="img/hummus.jpeg" alt="hummus"  onmouseover="showInfo(event)" onmouseout="hideInfo(event)">
+                <div class="info-img-a">
+                    <p> Preparación: 
+                        <br><br>
+                        Ingredientes: Garbanzos cocidos, tahini (pasta de sésamo), jugo de limón, ajo, aceite de oliva, sal. <br><br>
+                        Proceso: Se mezclan los garbanzos cocidos con tahini, jugo de limón, ajo y sal en un procesador de alimentos hasta obtener una textura suave. Se sirve con un chorrito de aceite de oliva y se puede adornar con pimentón y perejil.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="img-container" src="img/falafel.jpeg" alt="falafel" onmouseover="showInfo(event)" onmouseout="hideInfo(event)">
+                <div class="info-img-a">
+                    <p> Preparación: 
+                        <br><br>
+                        Ingredientes: Garbanzos o habas remojados, cebolla, ajo, perejil, cilantro, comino, sal, bicarbonato de sodio. 
+                        <br><br>
+                        Proceso: Los garbanzos (o habas) remojados se mezclan con cebolla, ajo y especias en un procesador de alimentos. La mezcla se forma en bolas o croquetas y se fríen hasta que estén doradas y crujientes.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <br>
+        <hr>
+
+
+        <!--Segunda linea-->
+        <div class="txt">
+            <div class="info">
+                <h3>Tabbouleh</h3>
+                <p>Originario de la region del levante &#40Libano y Siria&#41. el tabbouleh se basa en una <br>
+                ensalada tradicional que se ha consumido durante siglos como un plato <br>
+                refrescante y saludable.
+                </p>
+            </div>
+            <div class="info">
+                <h3>Shawarma</h3>
+                <p>EL Shawarma tiene sus raices en el imperio otamo, y se ha convertido en un plato <br>
+                emblematico en todo el Medio Oriente. Se trata de carne asada en un<br>
+                asador vertical.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="b-container">
+            <div class="card">
+                <img class="img-container" src="img/tabbouleh.jpeg" alt="tabbouleh" onmouseover="showInfo(event)" onmouseout="hideInfo(event)" >
+                    <div class="info-img-a">
+                        <p>Preparación: 
+                           <br><br>
+                           Ingredientes: Bulgur (trigo partido), perejil fresco, menta, tomate, cebolla, jugo de limón, aceite de oliva, sal. 
+                           <br><br>
+                           Proceso: El bulgur se remoja hasta que esté blando. Se mezcla con perejil, menta, tomate y cebolla finamente picados. Se adereza con jugo de limón, aceite de oliva y sal.
+                        </p>
+                    </div>
+                </div>
+            <div class="card">
+                <img class="img-container" src="img/shawarma.webp" alt="shawarma" onmouseover="showInfo(event)" onmouseout="hideInfo(event)">
+                <div class="info-img-a">
+                     <p>Preparación: 
+                        <br><br>
+                        Ingredientes: Carne (pollo, cordero o res), yogur, ajo, jugo de limón, especias (comino, pimentón, cúrcuma, canela), pan pita. 
+                        <br><br>
+                        Proceso: La carne se marina en una mezcla de yogur, jugo de limón y especias, y luego se cocina en un asador vertical. La carne cocida se corta en tiras finas y se sirve en pan pita con ensalada, pepinillos y salsa de tahini o ajo.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <br>
+        <hr>
+
+
+    <!--Tercera linea-->
+        <div class="txt">
+            <div class="info">
+            <h3>Cordero asado</h3>
+                <p>El cordero asado es un plato tradicional en muchas culturas del Medio Oriente. <br>
+                ha sido una fuente de carne vital durante siglos, especialmente en las comunidades <br>
+                nómadas que crían ovejas y cabras.
+                </p>
+            </div>
+            <div class="info">
+                <h3>Baklava</h3>
+                <p>El baklava es un postre dulce que tiene sus raíces en el Imperio Otomano, aunque <br>
+                también se encuentra en diversas variantes en Grecia, el Medio Oriente y partes <br>
+                del norte de África.
+                </p>
+            </div>
+        </div>
+
+    
+        <div class="b-container">
+            <div class="card">
+                <img class="img-container" src="img/cordero-asado.jpg" alt="tabbouleh" onmouseover="showInfo(event)" onmouseout="hideInfo(event)" >
+                <div class="info-img-a">
+                    <p>Preparación: 
+                        <br><br>
+                        Ingredientes: 1 pierna de cordero (2-3 kg), ajo, romero, tomillo, comino, pimentón, limón, aceite de oliva, sal, pimienta.
+                        <br><br>
+                        Proceso: Mezclar los ingredientes y frotar el cordero.
+                        Marinar 4 horas, asar a 180°C por 1.5-2 horas, reposar 15 minutos antes de cortar.
+                    </p>
+                </div>
+            </div>
+            <div class="card">
+                <img class="img-container" src="img/baklava.webp" alt="" onmouseover="showInfo(event)" onmouseout="hideInfo(event)">
+                <div class="info-img-a">
+                    <p>Preparación: 
+                        <br><br>
+                        Ingredientes: Masa filo, mantequilla, nueces, canela, azúcar, agua, miel, vainilla, cáscara de limón.
+                        <br><br>
+                        Proceso: Mezclar nueces y canela, alternar capas de masa filo con mantequilla y relleno de nueces, cortar y hornear a 175°C por 45-50 minutos, hervir azúcar, agua, miel, vainilla y limón. Verter sobre el baklava caliente.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+    <br>
+    <br>
+
+
+     <!--pie de pagina-->
+     <footer  style="background-color: rgb(239, 214, 176)">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Enlaces de interés</h5>
+                    <iframe width="100%" height="200" src="https://www.youtube.com/embed/5A7qFcZXjrA?si=vjnq8_YBbbhJeAFS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="col-md-4">
+                    <h5>Síguenos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="https://web.facebook.com/felix.ramon.2512" class="text-dark"><i class="bi bi-facebook"></i> Facebook</a></li>
+                        <li><a href="https://github.com/Felixs04" class="text-dark"><i class="bi bi-github"></i>Github</a></li>
+                        <li><a href="https://www.instagram.com/f.suriellugo/" class="text-dark"><i class="bi bi-instagram"></i> Instagram</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Ubicación</h5>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d60528.01477707157!2d-70.03790798175446!3d18.528860404499856!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf8b6e52477751%3A0xbd0377bdf3fa6fcc!2sEscuela%20de%20Gastronomia%20Culinary%20Arts!5e0!3m2!1ses-419!2sdo!4v1720569084179!5m2!1ses-419!2sdo" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <hr>
+            <p class="text-center">&copy; 2024 virtual recipes. Todos los derechos reservados.</p>
+            <p class="text-center"><a href="#" class="text-white" data-bs-toggle="modal" data-bs-target="#privacyModal">Política de Privacidad</a></p>
+        </div>
+    </footer>
+
+   
+    <!--politicas de privacidad-->
+    <div class="modal fade" id="privacyModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Política de Privacidad</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, accusantium! Corrupti, omnis. Omnis, magni eius. Nemo at quia, impedit cupiditate tempora quam dolorem commodi nulla, similique nobis, magni necessitatibus debitis!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--insertacion del javascript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
